@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
-#include <cmath>;
-#include <string>;
-
+#include <string>
 
 int main() {
 
@@ -18,24 +16,35 @@ int main() {
     int x;
     int y;
 
+    string temp;
+
+    bool z;
+
+    cout << "Type in 3 numbers for a b c in ax + by = c: ";
     cin >> num1;
     cin >> num2;
     cin >> sum1;
+    getline(cin,temp);
 
+    cout << "Type in 3 more numbers for a b c in ax + by = c: ";
     cin >> num3;
     cin >> num4;
     cin >> sum2;
+    getline(cin,temp);
 
-
-    for( x = -10, x < 11; x++){
-        for( y = -10; y < 11; y++){
-            if(((num1 * x) + (num2 * y) == sum1) && ((num3 * x) + (num4 * y) == sum2)){
-                cout << x << endl;
-                cout << y << endl;
+    for( x = -10; x < 11; x++){
+        for( y = -10; y < 11; y++) {
+            if (((num1 * x) + (num2 * y) == sum1) && ((num3 * x) + (num4 * y) == sum2)) {
+                z = true;
+                cout << "x value is: " << x << endl;
+                cout << "y value is: " << y << endl;
             }
         }
     }
-cout << "No solution";
+
+if (!z) {
+    cout << "No solution";
+}
 
     return 0;
 }
