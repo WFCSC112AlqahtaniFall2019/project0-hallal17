@@ -1,5 +1,5 @@
 #include <iostream>
-Using namespace std;
+using namespace std;
 #include <cmath>;
 #include <string>;
 
@@ -9,18 +9,18 @@ int main() {
     int num1;
     int num2;
 
-    int num 3;
-    int num 4;
+    int num3;
+    int num4;
 
     int sum1;
-    int sum 2;
+    int sum2;
 
     int x;
     int y;
 
     cin >> num1;
     cin >> num2;
-    cin >> sum 1;
+    cin >> sum1;
 
     cin >> num3;
     cin >> num4;
