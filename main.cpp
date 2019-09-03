@@ -24,13 +24,13 @@ int main() {
     cin >> num1;
     cin >> num2;
     cin >> sum1;
-    getline(cin,temp);
+
 
     cout << "Type in 3 more numbers for a b c in ax + by = c: ";
     cin >> num3;
     cin >> num4;
     cin >> sum2;
-    getline(cin,temp);
+
 
     for( x = -10; x < 11; x++){
         for( y = -10; y < 11; y++) {
@@ -41,10 +41,8 @@ int main() {
             }
         }
     }
-
 if (!z) {
     cout << "No solution";
 }
-
     return 0;
 }
